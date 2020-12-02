@@ -4,18 +4,21 @@ import clsx from 'clsx'
 
 import styles from './styles'
 
-export interface ButtonProps {
-  color: string
-  children: React.ReactChildren
+export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = (props: ButtonProps): JSX.Element => {
-  const { color, children } = props
+  const { className, children } = props
 
   return (
-    <button className={clsx()}>
+    <button className={clsx(className)}>
+      {children}
     </button>
   )
+}
+
+Button.defaultProps = {
+
 }
 
 export default withStyles(styles, {

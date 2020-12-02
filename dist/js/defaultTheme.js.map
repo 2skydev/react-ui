@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/defaultTheme.ts"],"names":["Button","margin","padding"],"mappings":";;;;;;eAAe;AACbA,EAAAA,MAAM,EAAE;AACNC,IAAAA,MAAM,EAAE,KADF;AAENC,IAAAA,OAAO,EAAE;AAFH;AADK,C","sourcesContent":["export default {\n  Button: {\n    margin: '5px',\n    padding: '8px 12px'\n  }\n}"],"file":"defaultTheme.js"}
